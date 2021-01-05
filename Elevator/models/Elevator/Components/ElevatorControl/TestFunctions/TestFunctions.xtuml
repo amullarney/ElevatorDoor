@@ -1,0 +1,141 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	"00000000-0000-0000-0000-000000000000",
+	"8c7757ab-7e7e-41eb-9955-fe1586f0908a",
+	'TestFunctions',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("fffbae6a-85ce-47f1-ac2e-e7da6a42fc6b",
+	112,
+	"ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'Elevator::Components::ElevatorControl::TestFunctions');
+INSERT INTO DIM_DIA
+	VALUES ("fffbae6a-85ce-47f1-ac2e-e7da6a42fc6b",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("5d1caf9f-79fb-4e69-aa88-efcbcc3c4774",
+	"00000000-0000-0000-0000-000000000000",
+	'CreateDoor',
+	'',
+	'create object instance door of Door;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("5d1caf9f-79fb-4e69-aa88-efcbcc3c4774",
+	1,
+	"ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("c42fbc6e-e5e2-4d00-a085-9c249bb7f169",
+	"00000000-0000-0000-0000-000000000000",
+	'PushButton',
+	'',
+	'select any door from instances of Door;
+generate Door1:Button_pushed() to door;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("c42fbc6e-e5e2-4d00-a085-9c249bb7f169",
+	1,
+	"ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("1d3062d4-2736-487f-a580-22203ccc23c8",
+	"00000000-0000-0000-0000-000000000000",
+	'SenseClosed',
+	'',
+	'select any door from instances of Door;
+generate Door2:Closed_sensed() to door;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("1d3062d4-2736-487f-a580-22203ccc23c8",
+	1,
+	"ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("fd65f29d-011a-41ae-8833-ba1aed80cb93",
+	"00000000-0000-0000-0000-000000000000",
+	'SenseArrival',
+	'',
+	'select any door from instances of Door;
+generate Door3:Arrival_sensed() to door;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("fd65f29d-011a-41ae-8833-ba1aed80cb93",
+	1,
+	"ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("4f138bc6-d58c-42c5-b986-56e8ae0dd819",
+	"00000000-0000-0000-0000-000000000000",
+	'SenseOpen',
+	'',
+	'select any door from instances of Door;
+generate Door4:Open_sensed() to door;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("4f138bc6-d58c-42c5-b986-56e8ae0dd819",
+	1,
+	"ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("ad62f480-a3f3-4c33-a3f1-f7501b31c048",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"f8f224c2-417f-4585-9924-d4960e36dc9a",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("f8f224c2-417f-4585-9924-d4960e36dc9a",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'ElevatorControl',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../ElevatorControl.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("8c7757ab-7e7e-41eb-9955-fe1586f0908a",
+	'Elevator',
+	1,
+	'../../../Elevator.xtuml');

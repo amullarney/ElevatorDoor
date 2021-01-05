@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("66494eae-c7cc-44e9-92f4-28e2939e63a5",
+	'Door',
+	1,
+	'Door',
+	'The door on the elevator cabin.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("38026585-a7a5-4bcf-b778-43d7ec862e13",
+	"66494eae-c7cc-44e9-92f4-28e2939e63a5");
+INSERT INTO O_BATTR
+	VALUES ("38026585-a7a5-4bcf-b778-43d7ec862e13",
+	"66494eae-c7cc-44e9-92f4-28e2939e63a5");
+INSERT INTO O_ATTR
+	VALUES ("38026585-a7a5-4bcf-b778-43d7ec862e13",
+	"66494eae-c7cc-44e9-92f4-28e2939e63a5",
+	"00000000-0000-0000-0000-000000000000",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"66494eae-c7cc-44e9-92f4-28e2939e63a5");
+INSERT INTO O_ID
+	VALUES (1,
+	"66494eae-c7cc-44e9-92f4-28e2939e63a5");
+INSERT INTO O_ID
+	VALUES (2,
+	"66494eae-c7cc-44e9-92f4-28e2939e63a5");
+INSERT INTO PE_PE
+	VALUES ("66494eae-c7cc-44e9-92f4-28e2939e63a5",
+	1,
+	"2aa55761-a8f1-47a6-8c94-9ad614ee82f9",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("2aa55761-a8f1-47a6-8c94-9ad614ee82f9",
+	"00000000-0000-0000-0000-000000000000",
+	"8c7757ab-7e7e-41eb-9955-fe1586f0908a",
+	'Cabin',
+	'',
+	0,
+	'../Cabin.xtuml');
